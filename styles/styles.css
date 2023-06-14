@@ -1,0 +1,250 @@
+:root {
+    --text-color: #fff;
+    --test-color-2: #333;
+    --hero-h1-color: #172B4D;
+    --hero-h2-color: #36B37E;
+    --btn-color: #EBF0EE;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    scroll-behavior: smooth;
+}
+
+
+/* === NavBar Section === */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: white;
+    /* opacity: .9; */
+}
+
+nav ul li {
+    display: inline-flex;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+}
+
+li{
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: var(--text-color-2);
+    transition: all .3s ease-in-out;
+}
+
+li a:hover{
+    color: #36B37E;
+    transform: scale(1.2);
+}
+
+
+/* === Hero Section === */
+
+.hero {
+ background-image: url("/assets/Header-llustration-desktop.svg");
+ height: 100vh;
+ width: 100vw;
+ padding-top: 50px;
+ display: flex;
+ justify-content: center;
+ object-fit: cover;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+.heroContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heroContent > h1 {
+    color: var(--hero-h1-color);
+    font-size: 50px;
+    padding-bottom: .3rem;
+}
+
+.heroContent > h2 {
+    color: var(--hero-h2-color);
+    font-size: 65px;
+    padding-bottom: .3rem;
+}
+
+.heroContent > p {
+    color: var(--hero-h1-color);
+    font-size: 1.4rem;
+    width: 799px;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.heroContent .heroIcons > a {
+    height: 18px;
+    padding-right: .5rem;
+}
+
+
+.heroContent .arrowDown a > img {
+    margin-top: 4rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    background-color: #172B4D;
+    border-radius: 50%;
+} 
+
+.heroContent .arrowDown a > img:hover {
+    transform: scale(1.2);
+    background-color: #36B37E;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 768px)  {
+    .heroContent > h1 {
+        font-size: 25px;
+        padding-bottom: .2rem;
+    }
+    
+    .heroContent > h2 {
+        font-size: 33px;
+        padding-bottom: .1rem;
+    }
+    
+    .heroContent > p {
+        font-size: 1rem;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .recentWorkCard {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+.hero {
+    justify-content: center;
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+   }
+   
+}
+
+
+/* === My Recent Work Section === */
+ 
+.recentWork > h1 {
+    font-size: 40px;
+    color: var(--hero-h1-color);
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 500px;
+  /* flex-shrink: 0;
+  flex-grow: 0; */
+  max-width: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 1rem;
+}
+
+.card > img {
+    width: auto;
+    max-height: 300px;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.recentWorkCard {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.cardContent > h3 {
+    padding: 10px 20px;
+    font-weight: 600;
+    line-height: 32px;
+    font-size: 24px;
+    text-align: center;
+    justify-content: center;
+}
+
+.cardButtonContent {
+    padding: 5px 5px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: var(--hero-h2-color); */
+    align-items: center;
+}
+
+.cardButtonContent ul{
+    display: flex;
+    flex-direction: row;
+    margin: 4px 5px;
+}
+
+.cardButtonContent ul li {
+    margin: 5px 10px;
+    border: 1px solid var(--btn-color);
+    background-color: var(--btn-color);
+    padding: 4px 8px;
+    cursor: pointer;
+    color: var(--hero-h1-color);
+    transition: all .3s ease-in-out;
+    font-size: 1rem;
+}
+
+.cardButtonContent ul li:hover {
+    border: 1px solid var(--hero-h2-color);
+    /* background-color: var(--hero-h2-color); */
+}
+
+.cardButtonContent .btn{
+    margin: 20px 0;
+    padding: 10px 10px;
+    font-size: 1rem;
+    border: 1px solid var(--btn-color);
+    background-color: var(--btn-color);
+    cursor: pointer;
+    color: var(--hero-h1-color);
+    transition: all .3s ease-in-out;
+}
+
+.cardButtonContent .btn:hover {
+    border: 1px solid var(--hero-h2-color);
+}
+
+/* === About Me Section === */
+.aboutMe h1 {
+    text-align: center;
+    display: flex;
+    font-size: 3rem;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
