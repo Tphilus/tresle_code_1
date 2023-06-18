@@ -4,6 +4,7 @@
   --hero-h1-color: #172b4d;
   --hero-h2-color: #36b37e;
   --btn-color: #ebf0ee;
+  --cardBorder-color: #d0d9d4;
 }
 
 * {
@@ -12,7 +13,7 @@
   box-sizing: border-box;
 }
 
-body {
+html {
   scroll-behavior: smooth;
 }
 
@@ -52,15 +53,18 @@ li a:hover {
 /* Extra small devices (phones, 600px and down) */
 
 /* === Hero Section === */
+.heroWrapper {
+  background: url("/assets/main-images/hero-bg.png") no-repeat center center;
+  background-size: cover;
+}
 
 .hero {
-  background-image: url("/assets/Header-llustration-desktop.svg");
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   padding-top: 50px;
   display: flex;
   justify-content: center;
-  object-fit: cover;
+  object-fit: contain;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -175,6 +179,7 @@ li a:hover {
   border: 1px solid var(--btn-color);
   background-color: var(--btn-color);
   padding: 4px 8px;
+  border-radius: 10px;
   cursor: pointer;
   color: var(--hero-h1-color);
   transition: all 0.3s ease-in-out;
@@ -182,8 +187,8 @@ li a:hover {
 }
 
 .cardButtonContent ul li:hover {
-  border: 1px solid var(--hero-h2-color);
-  /* background-color: var(--hero-h2-color); */
+  color: var(--btn-color);
+  background-color: var(--hero-h2-color);
 }
 
 .cardButtonContent .btn {
@@ -201,12 +206,136 @@ li a:hover {
   border: 1px solid var(--hero-h2-color);
 }
 
+/* === My Recent Work2 Section === */
+.recentWorkSection > h1 {
+  font-size: 40px;
+  color: var(--hero-h1-color);
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.cardDetails > h3 {
+  padding: 10px 20px;
+  font-weight: 600;
+  line-height: 32px;
+  font-size: 24px;
+  text-align: center;
+  color: var(--hero-h1-color);
+}
+
+.card1 > img {
+  max-height: 250px;
+  width: 350px;
+  object-fit: cover;
+}
+
+.card1 {
+  border: 1px solid var(--cardBorder-color);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.recentWorkContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardButton > ul {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+  flex-flow: row wrap;
+}
+
+.cardButton ul > li {
+  margin: 5px 5px;
+  border: 1px solid var(--btn-color);
+  background-color: var(--cardBorder-color);
+  padding: 4px 8px;
+  cursor: pointer;
+  color: var(--hero-h1-color);
+  transition: all 0.3s ease-in-out;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+.cardButton ul > li:hover {
+  background: var(--hero-h2-color);
+  color: var(--btn-color);
+}
+
+.cardButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardButton .btn {
+  margin: 10px 0;
+  padding: 12px;
+  font-size: 1rem;
+  background-color: var(--hero-h2-color);
+  cursor: pointer;
+  color: var(--btn-color);
+  transition: all 0.3s ease-in-out;
+  border: 1px solid var(--hero-h2-color);
+  border-radius: 2px;
+}
+
+.cardButton .btn:hover {
+  border: 1px solid var(--hero-h2-color);
+  background-color: var(--text-color);
+  color: var(--hero-h1-color);
+}
+
+.workCard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
 /* === About Me Section === */
 .aboutMe h1 {
-  text-align: center;
-  display: flex;
-  font-size: 3rem;
-  justify-content: center;
-  padding-top: 20px;
+  font-size: 40px;
+  font-family: 700;
   padding-bottom: 10px;
+}
+
+.aboutMe {
+  margin-top: 80px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+.aboutMe > p {
+  font-size: 20px;
+  line-height: 32px;
+  width: 700px;
+  margin: auto;
+}
+
+.downImg {
+  position: absolute;
+  left: -0.01px;
+  height: 90px;
+  margin-top: -60px;
+}
+
+.aboutMeWrapper {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.topImg {
+  position: absolute;
+  right: -0.1px;
+  margin-top: -50px;
+  height: 200px;
+  display: flex;
 }
