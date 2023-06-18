@@ -17,7 +17,7 @@
   } */
 
   .heroContent .heroIcons a > img {
-    height: 13px;
+    height: 15.62px;
     padding-right: 0;
   }
 
@@ -26,23 +26,27 @@
   }
 
   .heroContent .arrowDown a > img {
-    margin-top: 2rem;
-    width: 1.8rem;
+    margin-top: 2.5rem;
+    height: 40px;
   }
 
   .hero .heroContent > h1 {
-    font-size: 1.3rem;
-    padding-bottom: 0.3rem;
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 0.5rem;
+    padding-top: 2rem;
   }
 
   .hero .heroContent > h2 {
-    font-size: 1.6rem;
-    padding-bottom: 0.3rem;
+    font-size: 40px;
+    padding-bottom: 1rem;
+    text-align: center;
   }
 
   .hero .heroContent > p {
-    font-size: 1rem;
+    font-size: 20px;
     width: 300px;
+    font-weight: 500;
     padding-bottom: 1.3rem;
   }
 
@@ -87,5 +91,54 @@
     flex-basis: 500px;
     max-width: 300px;
     margin: 0;
+  }
+
+  /* RECENT WORK 2 */
+
+  .workCard {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .recentWorkSection > h1 {
+    padding-top: 3rem;
+    width: 200px;
+    margin: auto;
+    font-size: 40px;
+    text-align: center;
+    align-items: center;
+  }
+
+  /* About Me Section */
+  .about > img {
+    display: none;
+  }
+  .aboutMeWrapper {
+    display: none;
+  }
+
+  .aboutMeWrapper {
+    padding-top: 0.5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .card1 {
+    border-radius: 8px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .workCard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .workCard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
