@@ -110,11 +110,18 @@
   }
 
   /* About Me Section */
-  .about > img {
+  .aboutMeWrapper > img {
     display: none;
   }
-  .aboutMeWrapper {
+
+  .topImg,
+  .downImg {
     display: none;
+  }
+
+  .aboutMe > p {
+    text-align: center;
+    width: 300px;
   }
 
   .aboutMeWrapper {
@@ -134,11 +141,32 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .topImg {
+    margin-top: -100px;
+    right: -3rem;
+    position: absolute;
+    height: 150px;
+  }
+
+  .downImg {
+    height: 90px;
+    margin-top: -15px;
+    display: flex;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
   .workCard {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .topImg {
+    position: absolute;
+    right: -0.1px;
+    margin-top: -50px;
+    height: 200px;
+    display: flex;
   }
 }

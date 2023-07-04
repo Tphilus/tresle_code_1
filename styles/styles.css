@@ -316,7 +316,7 @@ li a:hover {
 .aboutMe > p {
   font-size: 20px;
   line-height: 32px;
-  width: 700px;
+  max-width: 700px;
   margin: auto;
 }
 
