@@ -526,6 +526,7 @@ input {
   padding: 10px;
   border: 1px solid var(--cardBorder-color);
   outline: none;
+  font-size: 1rem;
 }
 
 textarea {
@@ -533,6 +534,7 @@ textarea {
   outline: none;
   border: 1px solid var(--cardBorder-color);
   padding: 10px;
+  font-size: 1rem;
 }
 
 .form1 {
@@ -546,5 +548,24 @@ textarea {
 .form1 > h2 {
   font-size: 30px;
   font-weight: 700;
+  color: var(--hero-h1-color);
+}
+
+.formDetails > button {
+  max-width: 120px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 17px;
+  background-color: var(--hero-h2-color);
+  border: 1px solid var(--hero-h2-color);
+  color: var(--btn-color);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.formDetails > button:hover {
+  border: 1px solid var(--hero-h2-color);
+  background-color: transparent;
   color: var(--hero-h1-color);
 }
