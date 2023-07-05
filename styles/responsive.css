@@ -129,6 +129,10 @@
     padding-top: 0.5rem;
     padding-bottom: 5rem;
   }
+
+  .aboutMeCard .cardWrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -155,6 +159,10 @@
     margin-top: -15px;
     display: flex;
   }
+
+  .aboutMeCard .cardWrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -169,5 +177,9 @@
     margin-top: -50px;
     height: 200px;
     display: flex;
+  }
+
+  .aboutMeCard .cardWrapper {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

@@ -5,6 +5,7 @@
   --hero-h2-color: #36b37e;
   --btn-color: #ebf0ee;
   --cardBorder-color: #d0d9d4;
+  --cardBackgroundColor: #ebf0ee;
 }
 
 * {
@@ -371,6 +372,10 @@ li a:hover {
 
 .cardBorder {
   border: 1px solid var(--cardBorder-color);
+  border-radius: 10px;
+  background-color: var(--cardBackgroundColor);
+  overflow: hidden;
+  /* padding-top: 25px; */
 }
 
 .cardTop {
@@ -382,7 +387,7 @@ li a:hover {
   justify-content: center;
   display: flex;
   padding: 15px;
-  background-color: blue;
+  background-color: var(--text-color);
 }
 
 .aboutMeCard {
@@ -396,13 +401,23 @@ li a:hover {
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 10px;
 }
 
 .cardP {
   /* padding: 20px; */
-  width: 369px;
+  max-width: 369px;
   height: 316px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
+  text-align: center;
+}
+
+.cardText > h1 {
+  color: #344563;
+  font-size: 2em;
 }
 
 .cardP .cardDetails > ul {
@@ -410,4 +425,58 @@ li a:hover {
   flex-direction: row;
   text-align: center;
   justify-content: center;
+  gap: 15px;
+}
+
+.cardP .cardDetails ul > li {
+  gap: 10px;
+  border: 1px solid var(--btn-color);
+}
+
+.cardBtn > ul {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+  flex-flow: row wrap;
+}
+
+.cardBtn ul > li {
+  margin: 1px 5px;
+  border: 1px solid var(--btn-color);
+  background-color: var(--cardBorder-color);
+  padding: 4px 8px;
+  cursor: pointer;
+  color: var(--hero-h1-color);
+  transition: all 0.3s ease-in-out;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+.cardBtn ul > li:hover {
+  background: var(--hero-h2-color);
+  color: var(--btn-color);
+}
+
+.cardBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardBtn .btn {
+  margin: 10px 0;
+  padding: 12px;
+  font-size: 1rem;
+  background-color: var(--hero-h2-color);
+  cursor: pointer;
+  color: var(--btn-color);
+  transition: all 0.3s ease-in-out;
+  border: 1px solid var(--hero-h2-color);
+  border-radius: 2px;
+}
+
+.cardBtn .btn:hover {
+  border: 1px solid var(--hero-h2-color);
+  background-color: var(--text-color);
+  color: var(--hero-h1-color);
 }
