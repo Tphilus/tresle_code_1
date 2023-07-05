@@ -339,3 +339,75 @@ li a:hover {
   height: 200px;
   display: flex;
 }
+
+.aboutMeBtn {
+  margin-top: 20px;
+}
+
+.aboutMe .btn {
+  margin: 0 auto;
+  max-width: 100px;
+  padding: 12px;
+  font-size: 1rem;
+  background-color: var(--hero-h2-color);
+  cursor: pointer;
+  color: var(--btn-color);
+  transition: all 0.3s ease-in-out;
+  border: 1px solid var(--hero-h2-color);
+  border-radius: 2px;
+}
+
+.aboutMe .btn:hover {
+  border: 1px solid var(--hero-h2-color);
+  background-color: var(--text-color);
+  color: var(--hero-h1-color);
+}
+
+/* === About Me Section Card === */
+
+.aboutMeCard {
+  margin-top: 8rem;
+}
+
+.cardBorder {
+  border: 1px solid var(--cardBorder-color);
+}
+
+.cardTop {
+  margin: 0 auto;
+  border: 1px solid var(--cardBorder-color);
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  justify-content: center;
+  display: flex;
+  padding: 15px;
+  background-color: blue;
+}
+
+.aboutMeCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutMeCard .cardWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.cardP {
+  /* padding: 20px; */
+  width: 369px;
+  height: 316px;
+}
+
+.cardP .cardDetails > ul {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+}
