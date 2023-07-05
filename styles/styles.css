@@ -388,6 +388,15 @@ li a:hover {
   display: flex;
   padding: 15px;
   background-color: var(--text-color);
+  cursor: pointer;
+}
+
+.cardTop > img {
+  transition: all 0.3s ease-in-out;
+}
+
+.cardTop > img:hover {
+  transform: scale(0.9);
 }
 
 .aboutMeCard {
@@ -429,7 +438,7 @@ li a:hover {
 }
 
 .cardP .cardDetails ul > li {
-  gap: 10px;
+  gap: 5px;
   border: 1px solid var(--btn-color);
 }
 
@@ -441,12 +450,12 @@ li a:hover {
 }
 
 .cardBtn ul > li {
-  margin: 1px 5px;
+  margin: 1px 4px;
   border: 1px solid var(--btn-color);
   background-color: var(--cardBorder-color);
   padding: 4px 8px;
   cursor: pointer;
-  color: var(--hero-h1-color);
+  color: var(--hero-h2-color);
   transition: all 0.3s ease-in-out;
   font-size: 1rem;
   border-radius: 4px;
@@ -478,5 +487,64 @@ li a:hover {
 .cardBtn .btn:hover {
   border: 1px solid var(--hero-h2-color);
   background-color: var(--text-color);
+  color: var(--hero-h1-color);
+}
+
+/* ======= Form Deatails Section ==== */
+
+.forms {
+  width: 84%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.formWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.formDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.input1,
+textarea {
+  width: 100%;
+}
+
+.input2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid var(--cardBorder-color);
+  outline: none;
+}
+
+textarea {
+  height: 100px;
+  outline: none;
+  border: 1px solid var(--cardBorder-color);
+  padding: 10px;
+}
+
+.form1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* max-width: 50px; */
+}
+
+.form1 > h2 {
+  font-size: 30px;
+  font-weight: 700;
   color: var(--hero-h1-color);
 }
