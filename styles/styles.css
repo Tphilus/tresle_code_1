@@ -496,6 +496,7 @@ li a:hover {
   width: 84%;
   margin: 0 auto;
   display: flex;
+  /* margin-bottom: 100px; */
 }
 
 .formWrapper {
@@ -568,4 +569,52 @@ textarea {
   border: 1px solid var(--hero-h2-color);
   background-color: transparent;
   color: var(--hero-h1-color);
+}
+
+/* ========= FOOTER SECTION ========== */
+
+footer {
+  background-color: var(--);
+}
+
+.footerIcons {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+  height: 16px;
+  /* padding-right: 0.5rem; */
+}
+
+.footerIcons a {
+  padding: 0 4px;
+}
+
+.cImg1 {
+  display: flex;
+  position: relative;
+  left: -8rem;
+  top: -10rem;
+}
+
+.cImg3 {
+  display: flex;
+  position: relative;
+  right: -64.05rem;
+  top: -45rem;
+  width: 213.901px;
+  height: 448.701px;
+  flex-shrink: 0;
+}
+
+.cImg2 {
+  display: flex;
+  position: relative;
+  left: 10rem;
+  top: -22rem;
+  width: 110px;
+}
+
+.ContactImg {
+  width: 100%;
+  height: 200px;
 }

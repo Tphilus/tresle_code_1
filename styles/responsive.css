@@ -146,6 +146,33 @@
   .input3 {
     margin-top: -20px;
   }
+
+  textarea {
+    margin-bottom: 12px;
+  }
+
+  .formDetails > button {
+    margin: 0 auto;
+  }
+
+  .ContactImg > img {
+    display: none;
+  }
+
+  .ContactImg {
+    height: 0;
+  }
+
+  .ContactImg > h3 {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    top: -2rem;
+    right: -4rem;
+    /* position: relative; */
+    color: var(--hero-h1-color);
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -180,6 +207,10 @@
   .formWrapper {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .ContactImg > h3 {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -202,5 +233,9 @@
 
   .formWrapper {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ContactImg > h3 {
+    display: none;
   }
 }
